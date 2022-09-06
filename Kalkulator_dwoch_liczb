@@ -1,0 +1,29 @@
+while True:
+    num1 = float(input("KALKULATOR\nWprowadz pierwsza liczbe: "))
+    num2 = float(input("Wprowadz druga liczbe: "))
+
+# while True:
+    operation = input("Wybierz operacje matematyczna:\n"
+    "1. Dodawanie\n"
+    "2. Odejmowanie\n"
+    "3. Mnozenie\n"
+    "4. Dzielenie\n")
+
+    if operation == "1":
+        print("Wynik: ", num1 + num2)
+    elif operation == "2":
+        print("Wynik: ", num1 - num2)
+    elif operation == "3":
+        print("Wynik: ", num1 * num2)
+    elif operation == "4":
+        print("Wynik: ", num1 / num2)
+    while True:
+        operation2 = input("Czy zresetować kalkulator? Wpisz 'Tak' lub 'Nie' : ")
+        if operation2 == "Tak":
+            print("odpalamy jeszcz raz!")
+            break
+        elif operation2 == "Nie":
+            print("zamykam program")
+            quit()
+        else:
+            operation2 = input("Czy zresetować kalkulator? Wpisz 'Tak' lub 'Nie' : ")
